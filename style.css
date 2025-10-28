@@ -1,0 +1,18 @@
+body {
+    margin: 20px;
+    background-color: rgb(105, 7, 4);
+    color: rgb(243, 235, 219);
+}
+
+div{
+    margin: 10px;
+    background-color: rgb(68, 29, 29);
+}
+
+p{
+    font-size: 25px;
+}
+
+h1{
+    font-size: 30px;
+}

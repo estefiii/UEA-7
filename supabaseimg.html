@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imagen</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+    <div id="imageContainer"></div>
+    <script>
+        const supabasePublicClient = supabase.createClient(
+            "https://kfqidzjgmsutzinomkza.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtmcWlkempnbXN1dHppbm9ta3phIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE5MTQ4NTAsImV4cCI6MjA3NzQ5MDg1MH0.eK749P3ZAfaUW9IFApWXMc1wdVxUAYuVLL0ZkgsLh8s",{
+                db:{
+                    schema:"public"}
+            }
+        );
+        (async() =>{
+            const response2 = await supabasePublicClient.storage.from("fotos").getPublicUrl("20251007_115224.jpg")
+            console.log(response2.data.publicUrl)
+            
+            const imgElement = document.createElement('img')
+            imgElement.src = response2.data.publicUrl
+            imgElement.width = 400
+            document.getElementById('imageContainer').appendChild(imgElement)
+        })()    
+    </script>
+</body>
+</html>

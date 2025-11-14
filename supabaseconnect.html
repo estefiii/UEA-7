@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supabase connect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <p id="lugar"></p>
+    <p id="duracion"></p>
+    <p id="sonidos"></p>
+
+    
+    <script>
+        const supabasePublicClient = supabase.createClient(
+            "https://kfqidzjgmsutzinomkza.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtmcWlkempnbXN1dHppbm9ta3phIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE5MTQ4NTAsImV4cCI6MjA3NzQ5MDg1MH0.eK749P3ZAfaUW9IFApWXMc1wdVxUAYuVLL0ZkgsLh8s",{
+                
+                db:{
+                    schema:"public"}
+            }
+        );
+
+        (async()=>{
+            const response = await supabasePublicClient.from('Eje').select("*")
+            console.log(response)
+            document.getElementById("lugar").innerHTML = response.data [0].lugar
+            document.getElementById("duracion").innerHTML = response.data [0].duracion
+            document.getElementById("sonidos").innerHTML = response.data [0].sonidos
+        })()
+    </script>
+</body>
+</html>

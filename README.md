@@ -1,7 +1,9 @@
 # UEA-7
-**Estefanía Hernández**
-**UEA VII: Producción y comunicación en la cultura colaborativa**
-**Licenciatura de Arte y Comunicación Digital**
+**Estefanía Hernández**  
+
+**UEA VII: Producción y comunicación en la cultura colaborativa**  
+
+**Licenciatura de Arte y Comunicación Digital**  
 
 ## Objetivo del repositorio
 

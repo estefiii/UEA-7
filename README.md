@@ -17,11 +17,11 @@ Sirve como evidencia del trabajo entregado, mostrando que cada ejercicio fue rea
 
 ## Organización del repositorio
 
-La organización de este repositorio está pensada para que cualquier persona —incluyéndome a mí misma— pueda encontrar cada actividad sin confundirse. Por eso, el contenido está dividido principalmente por carpetas que corresponden a las tareas o ejercicios entregados en clase. Cada carpeta contiene los archivos necesarios, ya sean documentos, imágenes o cualquier formato solicitado por la actividad. Los nombres de los archivos buscan ser claros para identificar rápidamente a qué ejercicio pertenecen.
+La organización de este repositorio está pensada para que cualquier persona pueda encontrar cada actividad sin confundirse. El contenido está separado por archivos que corresponden a las tareas o ejercicios hechos en clase. Cada archivo contiene los códigos necesarios. Los nombres de los archivos buscan ser claros para identificar rápidamente a qué ejercicio pertenecen.
 
-Además, mantengo el README principal como guía general del repositorio, y si alguna actividad lo requiere, puedo agregar pequeñas notas o explicaciones dentro de su propia carpeta. Esto no significa que todo tenga instrucciones largas, pero sí me ayuda a mantener un mínimo nivel de orden y claridad. También utilizo commits frecuentes, principalmente cada vez que termino o modifico una actividad, lo cual crea un historial básico de los cambios que voy realizando.
+Además, mantengo el README principal como guía general del repositorio, y si alguna actividad lo requiere, puedo agregar pequeñas notas o explicaciones dentro. Esto me ayuda a mantener un cierto nivel de orden y claridad. También utilizo commits frecuentes, principalmente cada vez que termino o modifico una actividad, lo cual crea un historial básico de los cambios que voy realizando.
 
-Aunque no estoy trabajando con ramas complicadas ni flujos avanzados, la idea es mantener una estructura simple que cumpla con los requerimientos del curso. En general, la organización está basada en ser práctica más que elaborada: cada carpeta para su actividad, nombres entendibles, archivos completos y una estructura que permita revisar el contenido sin problemas.
+La idea es mantener una estructura simple que cumpla con los requerimientos del curso. En general, la organización está basada en ser práctica más que elaborada: cada titulo para su actividad, nombres entendibles, archivos completos y una estructura que permita revisar el contenido sin problemas.
 
 ---
 

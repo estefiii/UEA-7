@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de datos Supabase</title>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+
+    <p id="Edad"></p>
+    <p id="Nombre"></p>
+    
+    <script>
+        const supabasePublicClient = supabase.createClient(
+            "https://kfqidzjgmsutzinomkza.supabase.co","eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtmcWlkempnbXN1dHppbm9ta3phIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjE5MTQ4NTAsImV4cCI6MjA3NzQ5MDg1MH0.eK749P3ZAfaUW9IFApWXMc1wdVxUAYuVLL0ZkgsLh8s",{
+                
+                db:{
+                    schema:"public"}
+            }
+        );
+
+        (async()=>{
+            const response = await supabasePublicClient.from('Base de datos con Supabase').select("*")
+            console.log(response)
+
+            let edades = "";
+            let nombres = "";
+
+            response.data.forEach(item => {
+                edades += item.Edad + "<br>";
+                nombres += item.Nombre + "<br>";
+            });
+
+            document.getElementById("Edad").innerHTML = edades;
+            document.getElementById("Nombre").innerHTML = nombres;
+        })()
+    </script>
+</body>
+</html>
